@@ -53,7 +53,7 @@ export const editTask = (index) => {
   const editInput = document.createElement('input');
   editInput.classList.add('editInput');
   editInput.value = task.desc;
-  editInput.style.backgroundColor = backgroundColor;
+  editInput.style.backgroundColor = 'backgroundColor';
 
   editInput.addEventListener('focusout', () => {
     updateTask(index, editInput);
