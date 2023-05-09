@@ -48,9 +48,7 @@ tasks.forEach((task) => {
   }
 
   const listItemIcon = document.createElement('i');
-  listItemIcon.classList.add('listItemIcon');
-  listItemIcon.classList.add('fas');
-  listItemIcon.classList.add('fa-ellipsis-v');
+  listItemIcon.classList.add('listItemIcon', 'fas', 'fa-ellipsis-v');
   listItemIcon.addEventListener('click', () => {
     editTask(task.index);
   });

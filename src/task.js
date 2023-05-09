@@ -53,16 +53,15 @@ export const editTask = (index) => {
   const editInput = document.createElement('input');
   editInput.classList.add('editInput');
   editInput.value = task.desc;
-  editInput.style.backgroundColor = '#d4d46e';
+  editInput.style.backgroundColor = backgroundColor;
 
   editInput.addEventListener('focusout', () => {
     updateTask(index, editInput);
   });
 
   const menuOk = document.createElement('i');
-  menuOk.classList.add('fas');
-  menuOk.classList.add('fa-trash');
-  menuOk.classList.add('menuOk');
+  menuOk.classList.add('fas', 'fa-trash', 'menuOk');
+
   menuOk.addEventListener('click', () => {
     removeTask(index);
   });
